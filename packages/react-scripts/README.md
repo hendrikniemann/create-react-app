@@ -1,7 +1,18 @@
-# react-scripts
+# @teip/react-scripts
 
-This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).<br>
-Please refer to its documentation:
+This is a fork of the official react scripts containing only a simple addition: The `@teip/loader` for GraphQL files (`.gql`/`.graphql`). This allows for the use of create-react-app with [Teip](https://github.com/hendrikniemann/teip).
 
-- [Getting Started](https://facebook.github.io/create-react-app/docs/getting-started) – How to create a new app.
-- [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
+## Usage
+
+If you want to create a new app with this version of react-scripts:
+
+```
+create-react-app --scripts-version=@teip/react-scripts myapp
+```
+
+If you want to add `@teip/loader` to your React app:
+
+```
+yarn remove react-scripts
+yarn add @teip/react-scripts
+```
